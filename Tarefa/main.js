@@ -5,7 +5,7 @@ const input = document.getElementById('input');
 const lista = document.getElementById('lista');
 
 //cria matriz vazia pra armazem tarefas
-let todos = []
+let todos = [];
 
 //func exibir lista tarefas
 function listarTarefas() {
@@ -25,8 +25,8 @@ function listarTarefas() {
         span.innerHTML = todo;
 
         //def txt do botao de excluir matriz e mostrar lista dnv
-        button.addEventListener = 'Excluir';
-        addEventListener('click', function(){
+        button.innerHTML = 'Excluir';
+        button.addEventListener('click', function () {
             todos.splice(i, 1);
             listarTarefas();
         });
@@ -35,20 +35,28 @@ function listarTarefas() {
         li.appendChild(span);
         li.appendChild(button);
 
-        //add element li na lista tarefas
-        lista.appendChild(span);
-    };
-};
+        // Adiciona o elemento li na lista de tarefas
+        lista.appendChild(li);
+    }
+}
 
 //detect qnd user envia nova tarefa
-form.addEventListener('submit', function(event) {
-    event.preventDefault;
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
     //obtem txt e remove espacos brancos desnecessários
-    const texto = input.ariaValueMax.trim();
+    const texto = input.value.trim();
 
     //retorna nova tarefa se n tiver txt
-    if(texto.length === 0){
+    if (texto.length === 0) {
         return;
     }
-})
+
+    //add nova tarefa na matriz, limpa input e mostra lista
+    todos.push(texto);
+    input.value = '';
+    listarTarefas();
+});
+
+//load lista tarefas qnd pagina é carregada
+listarTarefas();
