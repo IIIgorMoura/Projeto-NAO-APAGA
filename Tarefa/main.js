@@ -19,6 +19,9 @@ function listarTarefas() {
         //cria elements de lista, texto e botao
         const li = document.createElement('li');
         const span = document.createElement('span');
-        const button = document.createElement('button')
+        const button = document.createElement('button');
+
+        //def txt da tarefa no span
+        span.innerHTML = todo;
     }
 }
