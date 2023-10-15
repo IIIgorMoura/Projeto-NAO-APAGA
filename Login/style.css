@@ -22,19 +22,6 @@ body {
     background-image: linear-gradient(var(--corFundoGradient), var(--corFundo))
 }
 
-.fundo {
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-around;
-    align-items: center;
-
-
-}
-
 :root {
     --corFundo: #2b0257;
     --corFundoGradient: #23037c;
@@ -49,6 +36,21 @@ body {
 }
 
 /* background */
+.fundo {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.reverso {
+    flex-direction: row-reverse;
+}
 
 .login-form,
 .criar-form {
