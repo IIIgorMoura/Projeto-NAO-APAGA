@@ -10,12 +10,12 @@ a {
 
 @font-face {
     font-family: 'poppins';
-    src: url(font-POPPINS/Poppins-Regular.ttf);
+    src: url(../font-POPPINS/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: 'poppinsTitulo';
-    src: url(font-POPPINS/Poppins-Bold.ttf);
+    src: url(../font-POPPINS/Poppins-Bold.ttf);
 }
 
 body {

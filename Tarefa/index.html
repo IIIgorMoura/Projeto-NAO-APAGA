@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,23 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
+    <form class="form">
         <h1>Tarefas: </h1>
+        <input type="text" id="input" placeholder="Adicione uma tarefa">
 
-        <form class="form">
-            <input type="text" id="input" placeholder="Adicione uma tarefa">
+        <button type="submit">Adicionar</button>
+    </form>
 
-            <button type="submit">Adicionar</button>
-        </form>
+    <div class="container">
+
+        <ul id="lista"></ul>
     </div>
-    <ul id="lista"></ul>
+
 
     <!-- SCRIPT JS -->
     <script src="main.js"></script>
 </body>
+
 </html>

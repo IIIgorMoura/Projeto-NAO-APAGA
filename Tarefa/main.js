@@ -20,6 +20,7 @@ function listarTarefas() {
         const li = document.createElement('li');
         const span = document.createElement('span');
         const button = document.createElement('button');
+        button.className = "botaoOutroForm"
 
         //def txt da tarefa no span
         span.innerHTML = todo;
